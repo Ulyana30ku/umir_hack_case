@@ -1,0 +1,15 @@
+.splash-cursor-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.splash-cursor-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: saturate(0.72) brightness(0.98);
+  opacity: 0.8;
+}

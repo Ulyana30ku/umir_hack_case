@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiki AI</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="splash-cursor-layer" id="splashLayer"></div>
+    
+    <div class="popup-shell">
+      <header class="popup-header">
+        <div class="header-top">
+          <img src="./logo.png" alt="Chiki AI" class="logo" />
+          <div class="header-text">
+            <h1>Chiki AI</h1>
+            <p>Управляйте браузером через естественный язык</p>
+          </div>
+        </div>
+        <div class="header-buttons">
+          <button id="newChatBtn" class="new-chat-btn" type="button">Новый диалог</button>
+          <a href="http://localhost:5173/" target="_blank" class="full-version-btn">На полную версию →</a>
+        </div>
+      </header>
+
+      <main id="messages" class="messages" aria-live="polite"></main>
+
+      <form id="chatForm" class="chat-form">
+        <textarea
+          id="messageInput"
+          class="chat-input"
+          rows="2"
+          placeholder="Например: Открой apple.com и найди iPhone 15"
+        ></textarea>
+        <button id="sendBtn" class="send-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script src="splash-cursor.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

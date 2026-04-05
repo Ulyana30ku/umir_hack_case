@@ -1,0 +1,30 @@
+341:     global _parser
+
+342:     if _parser is None:
+
+343:         _parser = QueryParser()
+
+344:     return _parser
+
+345: , '', search_term)
+
+346:                 search_term = search_term.rstrip('.,!?;:-')
+
+347:                 if search_term and len(search_term) > 1:
+
+348:                     return search_term
+
+349:         return None
+
+350: 
+
+351:         # Map common Russian site names to URLs
+
+352:         url_mappings = {
+
+353:             'яндекс': 'https://market.yandex.ru',
+
+354:             'yandex': 'https://market.yandex.ru',
+
+355:             'яндекс маркет': 'https://market.yandex.ru',
+
